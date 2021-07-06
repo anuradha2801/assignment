@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h1 style="color:rebeccapurple" Shri Shankracharya Institute of Proffessional Management and Technology></h1><hr>
+    <h2>STUDENT'S INFORMATION FORM</h2>
+    <form action="backend.php">
+    <p>required fields are follwed by *</p>
+      <div><p>NAME:* <input type="text" name="my name" required/></div></p>
+      <div>Roll no:* <input type="text" name="my roll" required /></div>
+      <br />
+      <p>EMAIL:*<input type="email" name="myEmail" id="email" required/></p>
+      <br />
+
+      <div>Date of Birth*:<input type="date" name="my date of birth" required/></div>
+      <br />
+      <div>
+        GENDER:*<input type="radio" name=" my gender" required/> 
+        Male<input type="radio" name="my gender"/>
+        Female<input type="radio" name="my gender" />
+        Others<input type="radio" name="my gender" />
+      </div>
+      <br />
+      <p>CURRENT COURSE:*
+         <select name="current_degree" id="current_degree" required>
+             <option value="">--select--</option>
+             <option value="b.tech">b.tech</option>
+             <option value="m.tech">m.tech</option>
+             <option value="phd">phd</option>
+             <option value="bsc">bsc</option>
+             <option value="diploma">diploma</option>
+         </select></p>
+         <fieldset>
+       <legend>INFORMATION</legend> 
+       <p>PHONE NUMBER:* <input type="number" name="phone_number" id="phone_number" requiured> </p>
+       <p>ADDRESS: <textarea name="address" id="adress" cols="100" rows="8"></textarea> </p></fieldset>
+      <div> <input type="submit" name="submit now" />
+      <input type="reset" name="reset now" /></div>
+    </form>
+  </body>
+</html>
